@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "Currency": "USD",
+    "Rate": 1.1,
+    "UpdateDate": "2023-05-01T00:00:00"
+  },
+  {
+    "Id": 2,
+    "Currency": "EUR",
+    "Rate": 0.9,
+    "UpdateDate": "2023-05-02T00:00:00"
+  }
+]

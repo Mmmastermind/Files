@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCurrencyRate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CurrencyRate>
+    <Id>1</Id>
+    <Currency>USD</Currency>
+    <Rate>1.1</Rate>
+    <UpdateDate>2023-05-01T00:00:00</UpdateDate>
+  </CurrencyRate>
+  <CurrencyRate>
+    <Id>2</Id>
+    <Currency>EUR</Currency>
+    <Rate>0.9</Rate>
+    <UpdateDate>2023-05-02T00:00:00</UpdateDate>
+  </CurrencyRate>
+</ArrayOfCurrencyRate>

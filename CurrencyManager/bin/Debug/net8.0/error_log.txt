@@ -1,0 +1,29 @@
+[18.03.2025 18:53:28] Ошибка: Header with name 'Id'[0] was not found.
+Header with name 'Currency'[0] was not found.
+Header with name 'Rate'[0] was not found.
+Header with name 'UpdateDate'[0] was not found.
+Headers: '- Id: 2'
+If you are expecting some headers to be missing and want to ignore this validation, set the configuration HeaderValidated to null. You can also change the functionality to do something else, like logging the issue.
+
+IReader state:
+   ColumnCount: 1
+   CurrentIndex: -1
+   HeaderRecord:
+["- Id: 2"]
+IParser state:
+   ByteCount: 0
+   CharCount: 9
+   Row: 1
+   RawRow: 1
+   Count: 1
+   RawRecord:
+- Id: 2
+
+
+   at CsvHelper.Configuration.ConfigurationFunctions.HeaderValidated(HeaderValidatedArgs args)
+   at CsvHelper.CsvReader.ValidateHeader(Type type)
+   at CsvHelper.CsvReader.ValidateHeader[T]()
+   at CsvHelper.CsvReader.GetRecords[T]()+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CurrencyManager.CsvHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\File\Program.cs:line 38

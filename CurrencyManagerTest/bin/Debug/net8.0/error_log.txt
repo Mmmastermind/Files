@@ -1,0 +1,172 @@
+[19.03.2025 20:11:12] Ошибка: Unexpected character encountered while parsing value: T. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at CurrencyManager.JsonHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 73
+[19.03.2025 20:11:18] Ошибка: Could not find file 'C:\Users\9ksen\source\repos\FilesMDK\CurrencyManagerTest\bin\Debug\net8.0\non_existing_file.json'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadAllText(String path, Encoding encoding)
+   at CurrencyManager.JsonHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 72
+[19.03.2025 20:13:18] Ошибка: Header with name 'Id'[0] was not found.
+Header with name 'Currency'[0] was not found.
+Header with name 'Rate'[0] was not found.
+Header with name 'UpdateDate'[0] was not found.
+Headers: 'This is not a valid CSV string.'
+If you are expecting some headers to be missing and want to ignore this validation, set the configuration HeaderValidated to null. You can also change the functionality to do something else, like logging the issue.
+
+IReader state:
+   ColumnCount: 1
+   CurrentIndex: -1
+   HeaderRecord:
+["This is not a valid CSV string."]
+IParser state:
+   ByteCount: 0
+   CharCount: 31
+   Row: 1
+   RawRow: 1
+   Count: 1
+   RawRecord:
+This is not a valid CSV string.
+
+   at CsvHelper.Configuration.ConfigurationFunctions.HeaderValidated(HeaderValidatedArgs args)
+   at CsvHelper.CsvReader.ValidateHeader(Type type)
+   at CsvHelper.CsvReader.ValidateHeader[T]()
+   at CsvHelper.CsvReader.GetRecords[T]()+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CurrencyManager.CsvHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 38
+[19.03.2025 20:13:18] Ошибка: Could not find file 'C:\Users\9ksen\source\repos\FilesMDK\CurrencyManagerTest\bin\Debug\net8.0\non_existing_file.csv'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path)
+   at CurrencyManager.CsvHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 35
+[19.03.2025 20:15:33] Ошибка: Header with name 'Id'[0] was not found.
+Header with name 'Currency'[0] was not found.
+Header with name 'Rate'[0] was not found.
+Header with name 'UpdateDate'[0] was not found.
+Headers: 'This is not a valid CSV string.'
+If you are expecting some headers to be missing and want to ignore this validation, set the configuration HeaderValidated to null. You can also change the functionality to do something else, like logging the issue.
+
+IReader state:
+   ColumnCount: 1
+   CurrentIndex: -1
+   HeaderRecord:
+["This is not a valid CSV string."]
+IParser state:
+   ByteCount: 0
+   CharCount: 31
+   Row: 1
+   RawRow: 1
+   Count: 1
+   RawRecord:
+This is not a valid CSV string.
+
+   at CsvHelper.Configuration.ConfigurationFunctions.HeaderValidated(HeaderValidatedArgs args)
+   at CsvHelper.CsvReader.ValidateHeader(Type type)
+   at CsvHelper.CsvReader.ValidateHeader[T]()
+   at CsvHelper.CsvReader.GetRecords[T]()+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CurrencyManager.CsvHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 38
+[19.03.2025 20:17:28] Ошибка: Header with name 'Id'[0] was not found.
+Header with name 'Currency'[0] was not found.
+Header with name 'Rate'[0] was not found.
+Header with name 'UpdateDate'[0] was not found.
+Headers: 'This is not a valid CSV string.'
+If you are expecting some headers to be missing and want to ignore this validation, set the configuration HeaderValidated to null. You can also change the functionality to do something else, like logging the issue.
+
+IReader state:
+   ColumnCount: 1
+   CurrentIndex: -1
+   HeaderRecord:
+["This is not a valid CSV string."]
+IParser state:
+   ByteCount: 0
+   CharCount: 31
+   Row: 1
+   RawRow: 1
+   Count: 1
+   RawRecord:
+This is not a valid CSV string.
+
+   at CsvHelper.Configuration.ConfigurationFunctions.HeaderValidated(HeaderValidatedArgs args)
+   at CsvHelper.CsvReader.ValidateHeader(Type type)
+   at CsvHelper.CsvReader.ValidateHeader[T]()
+   at CsvHelper.CsvReader.GetRecords[T]()+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CurrencyManager.CsvHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 38
+[19.03.2025 20:17:28] Ошибка: Could not find file 'C:\Users\9ksen\source\repos\FilesMDK\CurrencyManagerTest\bin\Debug\net8.0\non_existing_file.csv'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path)
+   at CurrencyManager.CsvHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 35
+[19.03.2025 20:17:28] Ошибка: Unexpected character encountered while parsing value: T. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at CurrencyManager.JsonHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 73
+[19.03.2025 20:17:28] Ошибка: Could not find file 'C:\Users\9ksen\source\repos\FilesMDK\CurrencyManagerTest\bin\Debug\net8.0\non_existing_file.json'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadAllText(String path, Encoding encoding)
+   at CurrencyManager.JsonHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 72
+[19.03.2025 20:17:28] Ошибка: There is an error in XML document (1, 1).
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   at CurrencyManager.XmlHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 106
+[19.03.2025 20:17:28] Ошибка: Could not find file 'C:\Users\9ksen\source\repos\FilesMDK\CurrencyManagerTest\bin\Debug\net8.0\non_existing_file.xml'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path)
+   at CurrencyManager.XmlHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 104
+[19.03.2025 20:17:28] Ошибка: Expected 'SequenceStart', got 'MappingStart' (at Line: 1, Col: 1, Idx: 0).
+   at YamlDotNet.Core.ParserExtensions.Require[T](IParser parser)
+   at YamlDotNet.Core.ParserExtensions.Consume[T](IParser parser)
+   at YamlDotNet.Serialization.NodeDeserializers.CollectionNodeDeserializer.DeserializeHelper(Type tItem, IParser parser, Func`3 nestedObjectDeserializer, IList result, Boolean canUpdate, INamingConvention enumNamingConvention, ITypeInspector typeInspector, Action`2 promiseResolvedHandler)
+   at YamlDotNet.Serialization.NodeDeserializers.CollectionNodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value, ObjectDeserializer rootDeserializer)
+   at YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   at YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   at YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   at YamlDotNet.Serialization.Deserializer.Deserialize[T](IParser parser)
+   at YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   at YamlDotNet.Serialization.Deserializer.Deserialize[T](String input)
+   at CurrencyManager.YamlHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 142
+[19.03.2025 20:17:28] Ошибка: Could not find file 'C:\Users\9ksen\source\repos\FilesMDK\CurrencyManagerTest\bin\Debug\net8.0\non_existing_file.yaml'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadAllText(String path, Encoding encoding)
+   at CurrencyManager.YamlHandler.ReadFromFile(String fileName) in C:\Users\9ksen\source\repos\FilesMDK\CurrencyManager\CurrencyManager.cs:line 141

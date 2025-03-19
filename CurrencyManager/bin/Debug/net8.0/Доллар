@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCurrencyRate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CurrencyRate>
+    <Id>1</Id>
+    <Currency>тенге</Currency>
+    <Rate>10</Rate>
+    <UpdateDate>2025-03-18T18:45:16.2842221+03:00</UpdateDate>
+  </CurrencyRate>
+  <CurrencyRate>
+    <Id>2</Id>
+    <Currency>евро</Currency>
+    <Rate>100</Rate>
+    <UpdateDate>2025-03-18T18:42:13.1824596+03:00</UpdateDate>
+  </CurrencyRate>
+</ArrayOfCurrencyRate>
